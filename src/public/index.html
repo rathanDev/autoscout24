@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Express HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/app.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <a class="navbar-brand" href="/">AutoScout24</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/about">Abouti</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="subscribe-container">
+        <form method="POST">
+            <input type="email" name="youremail" placeholder="Email Address" required>
+            <input type="text" name="yourname" placeholder="Name" required>
+            <input class="subscribe-button" type="submit" value="Subscribe">
+        </form>
+    </div>
+
+    <div>
+        <h3>File Upload</h3>
+        <form action="/file/upload" enctype="multipart/form-data" method="POST">
+            <input type="file" name="dataFile" />
+            <input type="submit" value="Upload a file" />
+        </form>
+    </div>
+
+</body>
+
+</html>
